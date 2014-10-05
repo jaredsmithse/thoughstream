@@ -41,7 +41,7 @@
         <!--ThoughtStream-->
         <scene sceneID="8O4-4o-x7F">
             <objects>
-                <viewController id="zzh-Tv-JWY" sceneMemberID="viewController">
+                <viewController id="zzh-Tv-JWY" customClass="MainViewController" customModule="thoughtstream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9WW-28-qGi"/>
                         <viewControllerLayoutGuide type="bottom" id="CDp-cQ-9gI"/>
@@ -49,37 +49,24 @@
                     <view key="view" contentMode="scaleToFill" id="RWL-k1-TDu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VU9-fG-uYe">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                                </variation>
-                            </textView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="VU9-fG-uYe"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="VU9-fG-uYe"/>
-                            </mask>
-                        </variation>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" title="ThoughtStream" id="um3-JU-p2j">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="TIu-X2-0cy">
+                            <connections>
+                                <action selector="buttonclick:" destination="zzh-Tv-JWY" id="uJS-KV-zRr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Integrations" id="LiE-AI-t35">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="UiD-IC-EO6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="view" destination="RWL-k1-TDu" id="Mvm-9m-Ruo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbK-a7-vwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

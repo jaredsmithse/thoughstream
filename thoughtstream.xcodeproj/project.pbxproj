@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6AD54B387C15728CD931C9FD /* libPods-thoughtstream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D6B09145E1BB5C2E27B9AE /* libPods-thoughtstream.a */; };
+		EB82E37F19E0BFAA002CFA4D /* KeywordTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82E37E19E0BFAA002CFA4D /* KeywordTextStorage.swift */; };
+		EB82E38219E1579F002CFA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB82E38119E1579F002CFA4D /* Main.storyboard */; };
 		EBA09BFB19E08D5800246E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA09BFA19E08D5800246E64 /* AppDelegate.swift */; };
 		EBA09BFD19E08D5800246E64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA09BFC19E08D5800246E64 /* MainViewController.swift */; };
-		EBA09C0019E08D5800246E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA09BFE19E08D5800246E64 /* Main.storyboard */; };
 		EBA09C0219E08D5800246E64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA09C0119E08D5800246E64 /* Images.xcassets */; };
 		EBA09C0519E08D5800246E64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA09C0319E08D5800246E64 /* LaunchScreen.xib */; };
 		EBA09C1119E08D5800246E64 /* thoughtstreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA09C1019E08D5800246E64 /* thoughtstreamTests.swift */; };
@@ -32,11 +33,12 @@
 		62C2BC57DD40CCCC3172D83F /* Pods-thoughtstream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtstream.release.xcconfig"; path = "Pods/Target Support Files/Pods-thoughtstream/Pods-thoughtstream.release.xcconfig"; sourceTree = "<group>"; };
 		B19E17C37310DF2ECCC51C3A /* Pods-thoughtstream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtstream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thoughtstream/Pods-thoughtstream.debug.xcconfig"; sourceTree = "<group>"; };
 		EB82E37D19E0B7E4002CFA4D /* ThoughtStream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThoughtStream-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB82E37E19E0BFAA002CFA4D /* KeywordTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordTextStorage.swift; sourceTree = "<group>"; };
+		EB82E38119E1579F002CFA4D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EBA09BF519E08D5800246E64 /* thoughtstream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thoughtstream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA09BF919E08D5800246E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBA09BFA19E08D5800246E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA09BFC19E08D5800246E64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		EBA09BFF19E08D5800246E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBA09C0119E08D5800246E64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBA09C0419E08D5800246E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EBA09C0A19E08D5800246E64 /* thoughtstreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thoughtstreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				EBBF733619E099AC00AB9A57 /* Controllers */,
-				EBA09BFE19E08D5800246E64 /* Main.storyboard */,
+				EB82E37E19E0BFAA002CFA4D /* KeywordTextStorage.swift */,
+				EB82E38119E1579F002CFA4D /* Main.storyboard */,
 				EBA09C0119E08D5800246E64 /* Images.xcassets */,
 				EBA09C0319E08D5800246E64 /* LaunchScreen.xib */,
 				EBA09BF819E08D5800246E64 /* Supporting Files */,
@@ -232,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBA09C0019E08D5800246E64 /* Main.storyboard in Resources */,
+				EB82E38219E1579F002CFA4D /* Main.storyboard in Resources */,
 				EBA09C0519E08D5800246E64 /* LaunchScreen.xib in Resources */,
 				EBA09C0219E08D5800246E64 /* Images.xcassets in Resources */,
 			);
@@ -287,6 +290,7 @@
 			files = (
 				EBA09BFD19E08D5800246E64 /* MainViewController.swift in Sources */,
 				EBBF733519E0999B00AB9A57 /* IntegrationsViewController.swift in Sources */,
+				EB82E37F19E0BFAA002CFA4D /* KeywordTextStorage.swift in Sources */,
 				EBA09BFB19E08D5800246E64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +314,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EBA09BFE19E08D5800246E64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBA09BFF19E08D5800246E64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBA09C0319E08D5800246E64 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
